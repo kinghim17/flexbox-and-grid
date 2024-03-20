@@ -1,0 +1,98 @@
+#hero {
+    height: 800px;/*upto how much it should occupy*/
+    background-image: url("/images/places/ocean.jpg");/*adding background image
+    to the main*/
+    background-position: center;/*for the image to be completelty visible
+    earlier the surfer wasnt visible*/
+    background-size: cover;/*it will cover the entire element*/
+    }
+    #hero-content {
+    width: 900px;
+    background-color: rgba(51, 47, 47, 0.8);
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 8px;
+    text-align: center;/*to center the content*/
+    padding: 50px 0;/*to increase the height of the background color*/
+    margin: 0 auto;/*auto makes the thing to center automatically */
+    position: relative;/*important concept here about positioning of the
+    elements*/
+    /*through relative part of it we keep the things posotions relative to the
+    document flow*/
+    /*there are other things like position absolute and fixed where it remains
+    fixed check it out*/
+    top: 200px;/*it helps to bring down the thing*/
+    }
+    #hero-content h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    }
+    #hero-content p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    }
+    #hero-content a {
+    text-decoration: none;
+    background-color: rgb(255, 251, 0);/*can be applied to normal texts too*/
+    padding: 12px 24px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;/*or 700 as number*/
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    }
+    #hero-content a:hover {
+    background-color: rgb(255, 238, 0);/*get slightly darker as we hover over
+    it*/
+    }
+    #highlights {
+    padding: 24px;/*for margin collpasing from h2 so that backgroud image can
+    cover all part*/
+    background: linear-gradient(0deg, rgb(227, 255, 253), rgb(118, 217, 210));
+    /*modern websites use linear gradient function (degree,two colors) degree
+    decides how to color should be there*/
+    }
+    #highlights h2 {/*descendent comibintor from id check*/
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(59, 65, 64);
+    margin: 24px 0;
+    }
+    #destinations {/* ul destination class for accessing the li*/
+    display: flex;/*mkaing everything side by side*/
+    justify-content: center;/*centers the flex items along the main axis*/
+    width: 90%;/*here the % refers to the parent so instead of 100 we do 90*/
+    margin: auto;/*makes the content to the center*/
+    margin-bottom: 40px;
+    }
+    .destination {
+    margin: 0 20px;
+    text-transform: uppercase;
+    width: 25%;
+    }
+    .destination p {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(124, 123, 123);
+    margin: 20px 0;/*to bring the text closer see through the box model in the
+    chrome*/
+    }
+    .destination img {/*descendent combinator for the image*/
+    height: 200px;/*reduces the size */
+    width: 100%;/* makes every image of the flex box 1/3rd of the size hence
+    pixels doesnt matter*/
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    object-fit: cover;/*as if the object is wide its squished in but through
+    this its evenly spread out*/
+    }
+    .destination strong {
+    color: rgb(0, 160, 117);
+    }
+    

@@ -1,0 +1,72 @@
+/*card look of the css*/
+body {
+    background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+    color: rgb(68, 68, 68);
+    }
+    #page-logo a {
+    color: rgb(183, 230, 235);
+    }
+    header {
+    position: static;
+    }/*we dont want the background to overwrite like the previous one so overwrote
+    the shared css file*/
+    header a {
+    color: rgb(183, 230, 235);
+    }
+    header nav a:hover {
+    background-color: rgb(183, 230, 235);
+    color: rgb(59, 59, 59);
+    }
+    main ul {
+    width: 1200px;/*width increased of the system as a whole*/
+    margin: 0 auto 48px auto;
+    display: grid;
+    /*flex are only useful for the one dimensional problems check*/
+    /* for 2D layouts we have something called as css grid*/
+    /*while working with the grid we use fractions instead of the pixels so
+    yeah*/
+    grid-template-columns: 1fr 1fr;/*1fr 1 fr means even distribution*/
+    gap: 20px 20px;/*gaps for rows then coloums*/
+    }
+    li:nth-of-type(3) {/*helps to cover all the width of it*/
+    /*through this we can target specific target*/
+    grid-column: 1 / span 2;/*start from 1 and ends at the column 2 */
+    /*similarly for the row and all*/
+    }
+    main li {
+    display: flex;
+    background-color: white;/*for the card*/
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;/*for the clip the picture as it exceeds the dimension*/
+    /*visible is the default one*/
+    }
+    main li img {/* 3 descendent combinators can be used too */
+    width: 300px;
+    height: 280px;/* typically we use height only in the image file for the
+    control of image only or else we use padding*/
+    object-fit: cover;/*we use this as to fill the image as done earlier*/
+    }
+    .item-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;/*it makes the flex to place between each other*/
+    justify-content: space-between;/*it makes it down with the the help of the
+    extra div*/
+    }
+    .item-content h2 {
+    margin: 0;/*to send it to up*/
+    }
+    .actions {
+    text-align: right;/*make the explore to the right*/
+    }
+    /*changing the color and hover effect of the anchor tag*/
+    .actions a {
+    text-decoration: none;
+    padding: 6px;
+    color: rgb(22, 211, 228);
+    border-radius: 5px;
+    }
+    .actions a:hover {
+    background-color: rgb(235, 253, 255);
+    }

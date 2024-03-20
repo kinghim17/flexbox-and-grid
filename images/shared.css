@@ -1,0 +1,80 @@
+/*shared css means it applies to both the tabs*/
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    }
+    ul {
+    list-style: none;/*removes the bullet points from the list*/
+    margin: 0;/*if it has some default margin or padding it removes it*/
+    padding: 0;
+    }
+    header {
+    /*theory on flex box*/
+    /*check many other properties like flex direction(which changes the
+    allignment)*/
+    /*flex-wrap is another property which helps to adjust according to the
+    decrease in size*/
+    /*flex flow is a combination of both direction and wrap*/
+    display: flex;/* makes thing side by side */
+    justify-content: space-between;/* makes the space available for it check
+    other properties like centre and all*/
+    align-items: center;/*makes them on the same level*/
+    padding: 15px 60px;
+    position: absolute;/* through this the image is behind the header now*/
+    width: 100%;/*% here means it takes 100% of the html element*/
+    top: 0;
+    left: 0;
+    box-sizing: border-box;/*it makes the thing to stay in the total comtent box
+    not on overall*/
+    }
+    #page-logo a{
+    padding: 10px;/*top right botoom left*/
+    font-family: "Oleo Script", sans-serif;
+    color: rgb(245, 243, 160);
+    font-size: 50px;
+    text-decoration: none;/*removes the underscore*/
+    text-transform: uppercase;/*capitalise all letters*/
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);/*like box shadow we can add text
+    shadow*/
+    /*x y radius color*/
+    }
+    header ul {/*descendent comibinator use for separating destination and about*/
+    display: flex;
+    }
+    header li {
+    margin-left: 20px;/*creating diff*/
+    }
+    header a {
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    }
+    header nav a:hover {/*header nav specifies that hover only applicable
+    for destinations and about*/
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+    }
+    footer {
+    background: linear-gradient(70deg, rgb(24, 24,24), rgb(25, 29, 29));
+    padding: 36px 0;
+    /*point to be noted margins are better for the left and right and paddings
+    for the top down*/
+    }
+    footer ul {
+    display: flex;
+    justify-content: center;
+    /* padding: 40px; */
+    }
+    footer li {
+    width: 80px;/*reducing the size of the elements by defining it*/
+    height: 80px;
+    margin: 0 50px;
+    }
+    footer img {
+    width: 100%;
+    height: 100%;
+    }
+    
